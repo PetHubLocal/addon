@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start PetHubLocal
+# ==============================================================================
+declare username
+declare password
+
+username="$(bashio::config 'username')"
+password="$(bashio::config 'password')"
+
+bashio::log.info "Username ${username}"
+bashio::log.info "Password ${password}"
+
+cd /share/pethublocal || bashio::exit.nok "Failed to change to Pet Hub Local working directory"
+exec pethublocal addon -u "${username}" -p "${password}"

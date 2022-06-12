@@ -1,0 +1,33 @@
+---
+version: 2.0.0
+slug: pethublocal
+name: Pet Hub Local
+description: An Local replacement for the SurePetCare Connect series of Pet Doors
+url: https://github.com/PetHubLocal/pethublocal
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options:
+  username: null
+  password: null
+  broker_password: pethublocal
+  customize:
+    debug: true
+ports:
+  80/tcp: 80
+  443/tcp: 443
+  8883/tcp: 8883
+schema:
+  username: str
+  password: password
+  broker_password: password
+  customize:
+    debug: bool
+startup: system
+#watchdog: tcp://[HOST]:1883

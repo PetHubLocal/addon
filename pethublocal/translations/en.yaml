@@ -1,0 +1,26 @@
+---
+configuration:
+  username:
+    name: SurePetCare Cloud Username
+    description: >-
+      Username / EMail Address to login to surepetcare.io to extract all configuration from SurePetCare
+  password:
+    name: SurePetCare Cloud Password
+    description: >-
+      Password for the above username to login to surepetcare.io
+  broker_password:
+    name: Password for 'pethublocal' Mosquitto addon
+    description: >-
+      You need to add a user to the Mosquitto addon to allow PetHubLocal to login to the central broker.
+  customize:
+    name: Customize
+    description: >-
+      See the Documentation tab for more information about these options.
+  debug:
+    name: Debug
+    description: >-
+      If enabled will turn on debug logging for mosquitto and the auth plugin.
+network:
+  80/tcp: HTTP Port for Web Interface and for the hub to download firmware updates
+  443/tcp: HTTPS Port for the hub to retrieve the credentials
+  8883/tcp: MQTT with SSL and Client Certificate enable for the Hub to connect to
