@@ -1,7 +1,8 @@
-# PetHubLocal Home Assistant Add-on
+# PetHubLocal Home Assistant Addon
 
-Adding a MQTT Broker and PetHubLocal as an addon
+Please read the Documentation tab about the installation as it's important that you need to wait while it installs, then configure both the `core_mosquitto` and `PetHubLocal` add-ons.
 
 ## About
 
-https://github.com/PetHubLocal/pethublocal
+Documentation: https://pethublocal.github.io/addon
+Code: https://github.com/PetHubLocal/pethublocal
