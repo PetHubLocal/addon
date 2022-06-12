@@ -1,5 +1,5 @@
 ---
-version: 2.0.0
+version: 2.0.1
 slug: pethublocal
 name: Pet Hub Local
 description: An Local replacement for the SurePetCare Connect series of Pet Doors
@@ -16,6 +16,8 @@ map:
 options:
   username: null
   password: null
+  broker_hostname: addon_core_mosquitto
+  broker_username: pethublocal
   broker_password: pethublocal
   customize:
     debug: true
@@ -26,6 +28,8 @@ ports:
 schema:
   username: str
   password: password
+  broker_hostname: str
+  broker_username: str
   broker_password: password
   customize:
     debug: bool

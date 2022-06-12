@@ -8,8 +8,16 @@ configuration:
     name: SurePetCare Cloud Password
     description: >-
       Password for the above username to login to surepetcare.io
+  broker_hostname:
+    name: Core Mosquitto MQTT Broker
+    description: >-
+      Core Mosquitto Broker, typically leave as addon_core_mosquitto unless there is a good reason to change it.
+  broker_username:
+    name: Username for Core Mosquitto MQTT broker login
+    description: >-
+      You need to add a user to the Mosquitto addon to allow PetHubLocal to login to the central broker.
   broker_password:
-    name: Password for 'pethublocal' Mosquitto addon
+    name: Password for Core Mosquitto MQTT broker login
     description: >-
       You need to add a user to the Mosquitto addon to allow PetHubLocal to login to the central broker.
   customize:

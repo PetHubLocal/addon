@@ -13,9 +13,9 @@ persistence true
 persistence_location data
 
 connection PetHubLocal
-address addon_core_mosquitto:1883
+address {{ .broker_hostname }}:1883
 
-remote_username pethublocal
+remote_username {{ .broker_username }}
 remote_password {{ .broker_password }}
 
 topic pethub/ha/# both 0
